@@ -10,7 +10,12 @@
 html, body {
     height: 100%;
 }
-
+strong{
+    font-size: 20px;
+}
+h1{
+    font-size: 32px;
+}
 h1, h2, h3, h4, h5, h6 {
     font-family: Geneva, Verdana, sans-serif;
 }
@@ -134,7 +139,18 @@ ul li ul:hover {
 
 .info__general{
     justify-content: center;
-    
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+form{
+    margin-top: 5%;
+    margin-left: 20%;
+}
+button{
+    background-color: rgb(3, 3, 56);
+    color: white;
+    font-size: 16px
 }
 
 .info__description__section__items > ul{
@@ -144,6 +160,7 @@ ul li ul:hover {
     gap: 3%;
     justify-content: center;
     width: 100%;
+    margin-bottom:15px;
    
     
 }
@@ -160,10 +177,13 @@ ul li ul:hover {
     list-style: none;
     display: flex;
     flex-direction: column;
+    
 
 }
 
 .info__description__section__items--list > ul > li{
-    color:gray;
-    
+    background-color: gray;
+    border:2px solid gray;
+    border-radius: 5px;
+    margin-bottom: 5px;
 }
