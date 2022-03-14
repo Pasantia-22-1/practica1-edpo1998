@@ -6,7 +6,7 @@
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-    <div>
+    <div class="boxcenter">
         <header>
             <nav>
                 <ul>
@@ -18,40 +18,38 @@
                 </ul>
             </nav>
         </header>
-            <h1>Contact</h1>
-                <div>
+
+        <main>
+            <div>
+                <h1>Contact</h1>
+                <form action="">
                     <label for="nombre">Name</label>
-                    <input id="nombre" name="nombre" />
-                </div>
-                <div>
+                    <input id="nombre" name="nombre"/><br/>
                     <label for="surname">Surname</label>
-                    <input id="surname" name="surname" />
-                </div>
-                <div>
+                    <input id="surname" name="surname" /><br/>
                     <label for="rooms">Rooms</label>
                     <select id="rooms" name="rooms">
                         <option value="1">Picadilly</option>
                         <option value="2">Cambridge</option>
                         <option value="3">Westminster</option>
-                    </select>
-                </div>
-                <div>
+                    </select><br/>
                     <label >Customer?</label>
                     <label >Yes </label>
                     <input type="radio" name="customer" value="1" checked>
                     <label >No </label>
-                    <input type="radio" name="customer" value="0" >
-                </div>
-                <button>Enviar</button>
-                <div>Cancelar</div>
-        <footer>
-            <div>
-                <ul>
-                    <li><a href="https://twitter.com"><img  src="assets/social/twitter.png" alt="icon for twitter"></a></li>
-                    <li><a href="http://www.facebook.com"><img  src="assets/social/facebook.png" alt="icon for facebook"></a></li>
-                    <li><a href="http://www.youtube.com"><img  src="assets/social/youtube.png" alt="icon for youtube"></a></li>
-                </ul>
-            </div>
+                    <input type="radio" name="customer" value="0" ><br/>
+                    <button>Enviar</button>
+                    <button>Cancelar</button>
+                </form>
+            </div>  
+        </main>
+
+        <footer class="socialmedia">
+            <ul>
+                <li><a href="https://twitter.com"><img  src="assets/social/twitter.png" alt="icon for twitter"></a></li>
+                <li><a href="http://www.facebook.com"><img  src="assets/social/facebook.png" alt="icon for facebook"></a></li>
+                <li><a href="http://www.youtube.com"><img  src="assets/social/youtube.png" alt="icon for youtube"></a></li>
+            </ul>
         </footer>
     </div>
 </body>

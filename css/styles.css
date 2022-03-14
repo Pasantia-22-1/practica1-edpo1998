@@ -1,2 +1,169 @@
 @import url(http://fonts.googleapis.com/css?family=Exo+2:400,200,600,800);
 
+*,*::before,*::after{ 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+html, body {
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Geneva, Verdana, sans-serif;
+}
+
+p{
+    font-family: Tahoma, "Trebuchet MS", sans-serif;
+    color: rgb(74, 74, 78);
+}
+
+
+.boxcenter {
+    padding-bottom: 100px;
+    min-height: calc(100% - 100px);
+    bottom: 0;
+    position: relative;
+
+}
+
+
+.gallery  img{
+    height: 200px;
+    width: 250px;
+}
+
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(5,300px);
+  gap: 5%;
+  justify-content: center;
+  width: 100%;
+}
+
+
+
+nav{
+    background-color: rgb(6, 30, 83);
+    padding: 0;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    background-color: rgb(6, 30, 83);
+    
+}
+
+nav li {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+  }
+
+   
+ul li ul {
+    visibility: hidden;
+    position: absolute;
+    display: none; 
+}
+   
+ul li:hover > ul,
+ul li ul:hover {
+    visibility: visible;
+    display: block;
+}
+   
+
+.socialmedia{
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.socialmedia > ul {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 1rem;
+}
+
+.socialmedia > ul > li{
+    align-items: center;
+    height: 4rem;
+    width: 4rem;
+    margin-left: 1rem;
+    border-radius: 2rem;
+}
+
+.socialmedia > ul > li > a >img{
+    border-radius: 50%;
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+}
+
+/*  Informacion */
+
+.info{
+    display: grid;
+    grid-template-columns: 70% 25%;
+    gap: 2%;
+    justify-content: center;
+    width: 100%;
+}
+
+.info__general{
+    justify-content: center;
+    
+}
+
+.info__description__section__items > ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 3%;
+    justify-content: center;
+    width: 100%;
+   
+    
+}
+
+.info__description__section__items > ul > li{
+    text-align: center;
+    color: red;
+    border:2px solid red;
+    border-radius: 10px;
+    font-size: 0.75rem;
+}
+
+.info__description__section__items--list > ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.info__description__section__items--list > ul > li{
+    color:gray;
+    
+}
